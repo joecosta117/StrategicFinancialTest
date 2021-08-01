@@ -1,0 +1,139 @@
+.creditors-container {
+  max-width: 650px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+/** TABLE HEADERS**/
+.creditors-table__headers {
+  display: grid;
+  grid-template-columns: 50px 180px 100px 120px 85px 110px;
+}
+.creditors-table__headers__input-box {
+  padding-top: 12px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+.creditors-table__headers__header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  font-weight: bold;
+}
+.creditors-table__headers__header:nth-child(5) {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 2px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.creditors-table__headers__header:nth-child(5) span {
+  width: 45px;
+  text-align: right;
+}
+.creditors-table__headers__header:nth-child(6) {
+  display: flex;
+  justify-content: flex-end;
+  border-right: 1px solid black;
+}
+
+/** TABLE ROWS**/
+.creditors-table__row__input-box {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+.creditors-table__row {
+  display: grid;
+  grid-template-columns: 50px 180px 100px 120px 85px 110px;
+}
+.creditors-table__row__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 2px;
+  border: 1px solid gray;
+  margin: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.creditors-table__row__item:nth-child(5),
+.creditors-table__row__item:nth-child(6) {
+  display: flex;
+  justify-content: flex-end;
+}
+.creditors-table__row__item[data-type="creditorName"] {
+  max-width: 174px;
+}
+.creditors-table__row__item[data-type="firstName"] {
+  max-width: 94px;
+}
+.creditors-table__row__item[data-type="lastName"] {
+  max-width: 118px;
+}
+.creditors-table__input-row {
+  display: grid;
+  padding-left: 50px;
+  grid-template-columns: 178px 100px 120px 86px 104px;
+}
+.creditors-table__input-row__input {
+  border: 1px solid gray;
+}
+.creditors-table__input-row__input input {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/** TABLE ERROR MESSAGE**/
+.creditors-error {
+  padding-top: 10px;
+  text-align: right;
+}
+.creditors-error__message {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/** TABLE BUTTONS**/
+.creditors-buttons {
+  padding-top: 20px;
+}
+.creditors-buttons button {
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 8px;
+  width: 120px;
+  text-align: center;
+  margin-right: 20px;
+}
+.creditors-buttons button[data-type="remove"] {
+  background-color: red;
+}
+
+/** TABLE COUNT STATISTICS**/
+.creditors-total-bar {
+  background-color: #86cee8;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+.creditors-total-rows {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.creditors-total-rows span:first-child {
+  padding-right: 75px;
+}
